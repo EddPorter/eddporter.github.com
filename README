@@ -2,3 +2,6 @@ EddPorter Homepage
 ==================
 
 This repository contains the source files for the http://eddporter.github.com/ web site, hosted on GitHub itself.
+
+Written with HTML 5 and CSS 3. Testing in the following browsers:
+* Chrome 12
