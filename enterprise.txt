@@ -1,0 +1,89 @@
+Enterprise Software Requirements
+================================
+
+Enterprise environments require the following software and tools in order to
+operate effectively. The assumption for such an environment is that open source
+or in-house written tools are preferred, but that a number of proprietary and
+closed source systems must integrate with these (e.g. Microsoft Windows, Active
+Directory).
+
+Configuration Management Dataabase
+----------------------------------
+
+This is surely the core of any IT provider within an organisation. This not only
+documents the systems and products deployed in the environment but it should act
+as the golden host for any configuration information. The workflow should be as
+follows:
+1. the CMDB is update with new settings;
+2. the end-point device receives and implements the new settings on the next
+  update cycle.
+However, the most common implementation is the reverse: system gets updated,
+then the CMDB is refreshed to reflect the new settings. This is incorrect. The
+CMDB should be the authoritative source of system and configuration information.
+
+The CMDB should be able to actively discover new systems in the environment and
+automatically bring them under its control. There should be no exceptions.
+The level of restrictions to configuration changes are based on the type of the
+system in the CMDB. For example, and Engineering or Development classed system
+will have fewer change ad-hoc change restrictions than a Production machine.
+
+New systems should be provisionable from the CMDB, too. If such systems have not
+been seen before by the CMDB then it should have the ability to create them.
+Naturally, this will be via a workflow in the CMDB. Creating virtual machines
+will require information about the parent hosting hypervisor whilst physical
+builds will need details of the host system on which to build. Either way, the
+system should be able to take a bare-metal system and place the required image
+on it in accordance with the data in the system.
+
+It should be possible for parts of the CMDB system to impose restrictions or
+requirements on other sections. For example, a system may have an application
+instance registered on it. This application instance may require a second hard
+drive and 4GiB RAM. Any virtual machine that this application is tied to might
+be automatically reconfigured to support these requirements. Physical machines
+not conforming to these requirements would not be allowed to host the
+application.
+
+It should be possible to define and apply policies to different systems. For
+example, restricted a virtual host to only hosting Development-class guest
+servers. Or limiting the maximum vCPUs assignable to a guest VM.
+
+Build System
+------------
+
+A single build system that is callable from the CMDB. The build system should
+be schedulable by the CMBD. A unique reference value into the CMDB should be all
+that is required to run the build system. The system itself should be able to
+connect to the CMDB to retrieve the information required to complete the build.
+
+Monitoring
+----------
+
+End points should be monitored for unauthorised activity. A baseline policy
+should be configurable in the CMDB for OS type (for example) with installed
+applications layering their own monitoring requirements on top.
+
+Configuration Scanning
+----------------------
+
+Agentless and agent-based compliance scanning of system and applications against
+the information stored in the CMDB. Automatic remediation should be an option,
+with optional maintenance/remediation windows configurable. Alternatively, a
+non-compliance report could be generated for manual remediation.
+
+Ticketing System
+----------------
+
+Modifications to CMDB data may require approvals depending on the system state
+and type. A ticketing system is required to manage the change procedure, alert
+the correct individuals, and provide a record of authorisation for the change.
+
+CMDB changes should be part of the ticketing process and automatically actioned
+once the change is approved and the allowed change window in time is reached.
+
+Account Management
+------------------
+
+Service and local account passwords should be held in a secure location with
+minimal access to end users. Most changes should be performed via the CMDB and
+pushed to the end points. Password change policies should be enforced
+automatically by the system with no user intervention.
