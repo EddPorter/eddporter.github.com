@@ -10,78 +10,19 @@ header, footer, aside, nav, article {
 }
 
 body {
-  margin: 6px auto;
-  width: 540px;
   font: 14px/22px helvetica, arial, freesans, clean, sans-serif;
-  background: #f0f0f0;
+  width: 1024px;
+  margin: auto;
+  }
+
+#page{
+  background-image: url("../images/bgimg.jpg");
+  background-attachment: local;
+  background-position: 0px 0px; 
+  background-color: #FFFFFF;
+  background-repeat: no-repeat;
 }
 
-h1, h2, h3 {
-  text-align: center;
-  font-family: Georgia, "Times New Roman", serif;
-}
-
-h2 {
-  font-size: 24px;
-  line-height: 32px;
-  padding: 8px 0;
-  margin: 0;
-}
-
-h3 {
-  font-size: 18px;
-  margin: 6px;
-}
-
-p {
-}
-
-section {
-  margin: 12px 6px;
-  padding-right: 20px;
-  padding: 6px;
-  border-radius: 22px;
-  border: 2px solid;
-}
-
-header {
-  margin: 0;
-  padding: 0;
-  border: 1px solid;
-  box-shadow: 3px 3px 7px #777;
-  border-radius: 22px;
-  background-color: #eeeeee;
-  background: #c0c0c0;
-}
-
-section header {
-  background: #f0f0f0;
-}
-
-#coding-interests {
-  display: table-cell;
-  width: 259px;
-  margin-right: 6px;
-}
-
-#hobbies {
-  display: table-cell;
-  width: 259px; 
-  margin-left: 6px;
-}
-
-#side-by-side {
-  display: table;
-  margin: 6px;
-}
-
-#intro {
-  background: #000000;
-  color: #f0f0f0;
-  border-color: #000000
-}
-
-#intro header {
-  background: #ffffff;
-  color: #000000;
+article {
+  width: 536px;
 }
