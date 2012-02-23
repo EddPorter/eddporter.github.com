@@ -11,18 +11,28 @@ header, footer, aside, nav, article {
 
 body {
   font: 14px/22px helvetica, arial, freesans, clean, sans-serif;
-  width: 1024px;
-  margin: auto;
-  }
-
-#page{
   background-image: url("../images/bgimg.jpg");
-  background-attachment: local;
-  background-position: 0px 0px; 
+  background-attachment: fixed;
+  background-position: top right; 
   background-color: #FFFFFF;
   background-repeat: no-repeat;
 }
 
-article {
-  width: 536px;
+#content {
+	display: table;
+}
+
+#mainContent {
+	display: table-cell;
+}
+
+#gap {
+	display: table-cell;
+width: 250px;
+}
+
+#sidebar {
+	text-align: right;
+	display: table-cell;
+	width: 230px;
 }
