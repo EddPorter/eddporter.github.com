@@ -9,7 +9,7 @@ The site is plain HTML and CSS with no build step. An empty `.nojekyll` file sto
 | Path | What it is |
 | --- | --- |
 | `index.html` | The homepage |
-| `css/main.css` | Its styles, including light and dark themes |
+| `css/main.css` | Its styles |
 | `projects.html`, `tools.html`, `enterprise.txt` | Old notes from 2012, still published but not linked from the homepage |
 | `images/bgimg.jpg` | The old background image, no longer used |
 

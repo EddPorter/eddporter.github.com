@@ -3,69 +3,122 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="color-scheme" content="light dark">
+<meta name="color-scheme" content="light">
 <meta name="author" content="Edd Porter">
+<meta name="description" content="Edd Porter: software developer in finance, infrastructure tooling and interop. Explainers, a sliding puzzle solver, a card game and a genetic programming library.">
 <title>Edd Porter</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700&family=IBM+Plex+Sans:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Noto+Sans+JP:wght@500;700&family=Space+Mono:wght@400;700&family=Work+Sans:wght@400;500;700&display=swap">
 <link rel="stylesheet" href="/css/main.css">
 </head>
 <body>
-<div class="wrap">
-  <header>
-    <h1>Edd Porter</h1>
-    <nav aria-label="Elsewhere">
-      <a href="https://github.com/eddporter">GitHub</a>
-    </nav>
-  </header>
+<div class="page">
 
-  <main>
-    <section>
-      <h2>About</h2>
-      <p>I'm a software developer in finance, mostly building infrastructure tooling and making systems talk to each other. I have an eye for detail, or at least an eye for spotting mistakes, and a stubborn belief that things should be done properly, if not first time then eventually. I like simple. I'm also wary of anything that claims to be, and will happily explain why.</p>
-    </section>
+  <div class="topbar">
+    <div class="inner">
+      <span>eddporter.github.io</span>
+      <nav aria-label="Elsewhere"><a href="https://github.com/eddporter">GitHub &#8599;</a></nav>
+    </div>
+  </div>
 
-    <section>
-      <h2>Things I have made</h2>
-      <ul class="cards">
-        <li>
-          <a href="https://eddporter.github.io/tsuikyuu/explainers/one-loop-many-searches.html">
-            <span class="name">One loop, many searches</span>
-            <span class="desc">An interactive explainer showing that breadth-first, depth-first, Dijkstra and A* are one search loop with a single function swapped.</span>
-            <span class="kind">Explainer</span>
-          </a>
-        </li>
-        <li>
-          <a href="https://eddporter.github.io/slider/">
-            <span class="name">Slider</span>
-            <span class="desc">A sliding puzzle solver, with A* and IDA* explained.</span>
-            <span class="kind">Explainer and tool</span>
-          </a>
-        </li>
-        <li>
-          <a href="https://eddporter.github.io/bezique/">
-            <span class="name">Bezique</span>
-            <span class="desc">A card game.</span>
-            <span class="kind">Game</span>
-          </a>
-        </li>
-        <li>
-          <a href="https://eddporter.github.io/GeneCodeCS/">
-            <span class="name">GeneCodeCS</span>
-            <span class="desc">Genetic programming library for .NET. Evolve programs from your own C# methods, compiled in memory.</span>
-            <span class="kind">Library</span>
-          </a>
-        </li>
-      </ul>
-    </section>
+  <div class="wrap">
 
-    <section>
-      <h2>Beyond the day job</h2>
-      <p>I like architecture, algorithms and data structures, and the whole journey from design to delivery. I like tests too, the targeted kind that give confidence a codebase does what it claims, catch regressions and make refactoring less alarming. I agree with Dijkstra that testing can show the presence of bugs but never their absence, which is why formal methods fascinate me, even though I have yet to use them in anger. The explainers above are what happens when that interest gets out.</p>
-      <p>Learning is the hobby the other hobbies hang off. Japan is the big one. I lived there, I still speak some Japanese, and I love the language, the culture, the food and the tea ceremony. Languages in general are a weakness. I play the piano and sing in a choir, and I'm teaching myself the organ and the trombone, neither of which is a quiet instrument to learn badly. I cycle to work, and keep promising myself I'll start running again.</p>
-    </section>
-  </main>
+    <header class="hero">
+      <div class="burst" aria-hidden="true"></div>
+      <p class="episode"><span lang="ja">第1話　はじめまして</span> <span class="en">/ Episode 1: Nice to meet you</span></p>
+      <div class="namewrap">
+        <h1 class="name">Edd<br>Porter</h1>
+        <div class="vert ja" lang="ja" aria-hidden="true">エド・ポーター</div>
+        <div class="sfx ja" lang="ja" aria-hidden="true">ゴゴゴゴ</div>
+      </div>
+      <p class="role">Software developer. Finance. Infrastructure tooling and interop.</p>
+
+      <div class="search">
+        <div class="bubble" aria-hidden="true">
+          <div class="ja" lang="ja">まだ着かないの？</div>
+          <div class="en">Are we there yet?</div>
+        </div>
+        <figure class="board">
+          <div class="grid" role="img" aria-label="A grid with a wall across the middle. A breadth-first search has spread from the start on the left, in blue, and is working its way round the end of the wall. The goal on the right has not been reached.">
+          <i style="background:rgb(88,99,255)"></i><i style="background:rgb(80,91,255)"></i><i style="background:rgb(88,99,255)"></i><i style="background:rgb(96,107,255)"></i><i style="background:rgb(104,114,255)"></i><i style="background:rgb(112,122,255)"></i><i style="background:rgb(121,130,255)"></i><i style="background:rgb(129,138,255)"></i><i style="background:rgb(137,145,255)"></i><i style="background:rgb(145,153,255)"></i><i class="w"></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i>
+          <i style="background:rgb(80,91,255)"></i><i style="background:rgb(72,83,255)"></i><i style="background:rgb(80,91,255)"></i><i style="background:rgb(88,99,255)"></i><i style="background:rgb(96,107,255)"></i><i style="background:rgb(104,114,255)"></i><i style="background:rgb(112,122,255)"></i><i style="background:rgb(121,130,255)"></i><i style="background:rgb(129,138,255)"></i><i style="background:rgb(137,145,255)"></i><i class="w"></i><i class="f"></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i>
+          <i style="background:rgb(72,83,255)"></i><i style="background:rgb(63,76,255)"></i><i style="background:rgb(72,83,255)"></i><i style="background:rgb(80,91,255)"></i><i style="background:rgb(88,99,255)"></i><i style="background:rgb(96,107,255)"></i><i style="background:rgb(104,114,255)"></i><i style="background:rgb(112,122,255)"></i><i style="background:rgb(121,130,255)"></i><i style="background:rgb(129,138,255)"></i><i class="w"></i><i style="background:rgb(178,184,255)"></i><i class="f"></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i>
+          <i style="background:rgb(63,76,255)"></i><i style="background:rgb(55,68,255)"></i><i style="background:rgb(63,76,255)"></i><i style="background:rgb(72,83,255)"></i><i style="background:rgb(80,91,255)"></i><i style="background:rgb(88,99,255)"></i><i style="background:rgb(96,107,255)"></i><i style="background:rgb(104,114,255)"></i><i style="background:rgb(112,122,255)"></i><i style="background:rgb(121,130,255)"></i><i class="w"></i><i style="background:rgb(170,176,255)"></i><i style="background:rgb(178,184,255)"></i><i class="f"></i><i></i><i></i><i></i><i></i><i class="s">G</i><i></i>
+          <i style="background:rgb(55,68,255)"></i><i class="s">S</i><i style="background:rgb(55,68,255)"></i><i style="background:rgb(63,76,255)"></i><i style="background:rgb(72,83,255)"></i><i style="background:rgb(80,91,255)"></i><i style="background:rgb(88,99,255)"></i><i style="background:rgb(96,107,255)"></i><i style="background:rgb(104,114,255)"></i><i style="background:rgb(112,122,255)"></i><i class="w"></i><i style="background:rgb(161,169,255)"></i><i style="background:rgb(170,176,255)"></i><i style="background:rgb(178,184,255)"></i><i class="f"></i><i></i><i></i><i></i><i></i><i></i>
+          <i style="background:rgb(63,76,255)"></i><i style="background:rgb(55,68,255)"></i><i style="background:rgb(63,76,255)"></i><i style="background:rgb(72,83,255)"></i><i style="background:rgb(80,91,255)"></i><i style="background:rgb(88,99,255)"></i><i style="background:rgb(96,107,255)"></i><i style="background:rgb(104,114,255)"></i><i style="background:rgb(112,122,255)"></i><i style="background:rgb(121,130,255)"></i><i class="w"></i><i style="background:rgb(153,161,255)"></i><i style="background:rgb(161,169,255)"></i><i style="background:rgb(170,176,255)"></i><i style="background:rgb(178,184,255)"></i><i class="f"></i><i></i><i></i><i></i><i></i>
+          <i style="background:rgb(72,83,255)"></i><i style="background:rgb(63,76,255)"></i><i style="background:rgb(72,83,255)"></i><i style="background:rgb(80,91,255)"></i><i style="background:rgb(88,99,255)"></i><i style="background:rgb(96,107,255)"></i><i style="background:rgb(104,114,255)"></i><i style="background:rgb(112,122,255)"></i><i style="background:rgb(121,130,255)"></i><i style="background:rgb(129,138,255)"></i><i style="background:rgb(137,145,255)"></i><i style="background:rgb(145,153,255)"></i><i style="background:rgb(153,161,255)"></i><i style="background:rgb(161,169,255)"></i><i style="background:rgb(170,176,255)"></i><i style="background:rgb(178,184,255)"></i><i class="f"></i><i></i><i></i><i></i>
+          <i style="background:rgb(80,91,255)"></i><i style="background:rgb(72,83,255)"></i><i style="background:rgb(80,91,255)"></i><i style="background:rgb(88,99,255)"></i><i style="background:rgb(96,107,255)"></i><i style="background:rgb(104,114,255)"></i><i style="background:rgb(112,122,255)"></i><i style="background:rgb(121,130,255)"></i><i style="background:rgb(129,138,255)"></i><i style="background:rgb(137,145,255)"></i><i style="background:rgb(145,153,255)"></i><i style="background:rgb(153,161,255)"></i><i style="background:rgb(161,169,255)"></i><i style="background:rgb(170,176,255)"></i><i style="background:rgb(178,184,255)"></i><i class="f"></i><i></i><i></i><i></i><i></i>
+          </div>
+          <figcaption><span lang="ja">探索中…</span> Breadth-first search, 17 steps in: visited in blue, frontier in yellow, wall in pink. S is the start. G is still out of reach.</figcaption>
+        </figure>
+      </div>
+    </header>
+
+    <div class="ticker" aria-hidden="true">学び ✦ Learning for its own sake ✦ オルガン ✦ Organ ✦ トロンボーン ✦ Trombone ✦ 日本語 ✦ Japanese ✦ 合唱 ✦ Choir ✦ ピアノ ✦ Piano ✦ 学び ✦ Learning for its own sake ✦</div>
+
+    <main>
+      <section class="about" aria-labelledby="h-about">
+        <h2 class="tag pink" id="h-about"><span lang="ja">自己紹介</span> · About</h2>
+        <div class="stamp ja" lang="ja" aria-hidden="true">学</div>
+        <p>I'm a software developer in finance, mostly building infrastructure tooling and making systems talk to each other. I have an eye for detail, or at least an eye for spotting mistakes, and a stubborn belief that things should be done properly, if not first time then eventually. I like simple. I'm also wary of anything that claims to be, and will happily explain why.</p>
+      </section>
+
+      <section class="made" aria-labelledby="h-made">
+        <h2 class="head black" id="h-made"><span lang="ja">作品</span> · Things I have made</h2>
+        <ul class="cards">
+          <li>
+            <a class="card blue r1" href="https://eddporter.github.io/tsuikyuu/explainers/one-loop-many-searches.html">
+              <span class="kind k-yellow"><span lang="ja">解説</span> Explainer</span>
+              <span class="title">One loop, many searches</span>
+              <span class="desc">An interactive explainer showing that breadth-first, depth-first, Dijkstra and A* are one search loop with a single function swapped.</span>
+            </a>
+          </li>
+          <li>
+            <a class="card pink r2" href="https://eddporter.github.io/slider/">
+              <span class="kind k-white"><span lang="ja">解説・ツール</span> Explainer and tool</span>
+              <span class="title">Slider</span>
+              <span class="desc">A sliding puzzle solver, with A* and IDA* explained.</span>
+            </a>
+          </li>
+          <li>
+            <a class="card white r3" href="https://eddporter.github.io/bezique/">
+              <span class="kind k-pink"><span lang="ja">ゲーム</span> Game</span>
+              <span class="title">Bezique</span>
+              <span class="desc">A card game.</span>
+            </a>
+          </li>
+          <li>
+            <a class="card yellow r4" href="https://eddporter.github.io/GeneCodeCS/">
+              <span class="kind k-blue"><span lang="ja">ライブラリ</span> Library</span>
+              <span class="title">GeneCodeCS</span>
+              <span class="desc">Genetic programming library for .NET. Evolve programs from your own C# methods, compiled in memory.</span>
+            </a>
+          </li>
+        </ul>
+      </section>
+
+      <section class="beyond" aria-labelledby="h-beyond">
+        <h2 class="head pink" id="h-beyond"><span lang="ja">仕事の外で</span> · Beyond the day job</h2>
+        <div class="pair">
+          <div class="box blue">
+            <p>I like architecture, algorithms and data structures, and the whole journey from design to delivery. I like tests too, the targeted kind that give confidence a codebase does what it claims, catch regressions and make refactoring less alarming. I agree with Dijkstra that testing can show the presence of bugs but never their absence, which is why formal methods fascinate me, even though I have yet to use them in anger. The explainers above are what happens when that interest gets out.</p>
+          </div>
+          <div class="box white">
+            <p>Learning is the hobby the other hobbies hang off. Japan is the big one. I lived there, I still speak some Japanese, and I love the language, the culture, the food and the tea ceremony. Languages in general are a weakness. I play the piano and sing in a choir, and I'm teaching myself the organ and the trombone, neither of which is a quiet instrument to learn badly. I cycle to work, and keep promising myself I'll start running again.</p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <a class="btn" href="https://github.com/eddporter">GitHub &#8599;</a>
+      <div class="tbc">
+        <div class="ja" lang="ja">つづく…</div>
+        <div class="en">To be continued</div>
+      </div>
+    </footer>
+  </div>
 </div>
 </body>
 </html>
