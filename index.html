@@ -1,31 +1,78 @@
----
-layout: default
-title: Edd Porter
----
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light dark">
+<meta name="author" content="Edd Porter">
+<title>Edd Porter</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700&family=IBM+Plex+Sans:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="/css/main.css">
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <h1>Edd Porter</h1>
+    <nav aria-label="Elsewhere">
+      <a href="https://github.com/eddporter">GitHub</a>
+    </nav>
+  </header>
 
-  <section id="intro">
-    <header>
-      <h2>A little about me</h2>
-    </header>
-    <p>An Englishman with an eye for detail, or at least an eye for spotting mistakes. I have a penchant for doing things correctly, if not in the first instance then that should be the ultimate goal. Useability, I feel, should be in everybody's top 3 (at least) of things to be considering at all times when creating something. Simple is good, but is not always achievable and it is hard to balance where the "simplicity balance" between end-user and product design should lie.</p>
-  </section>
-  <div id="side-by-side">
-  <section id="coding-interests">
-    <header>
-      <h2>What I like to code</h2>
-    </header>
-    <p>There are many things that interest me in the field of computer science. I have a general appreciation for algorithms and data structures and also for formal program design and TDD. I enjoy the entire process of program creation, from design to implementation. Specific areas of interest to me include compilers and interpreters, code converters, neural nets, and number crunchers. I also have an interest in operating system design.</p>
-  </section>
-  <section id="hobbies">
-    <header>
-      <h2>My other hobbies</h2>
-    </header>
-    <p>I enjoy running and cycling and am an avid fan for Formula 1 motor racing. On the odd weekend, I will go and marshal for a motorsport club meeting and have attended two BTCC events. My home race track is at Thruxton. I love all things Japanese, including the language, the culture, the food, and the tea ceremony. I speak a little Japanese, though once spoke much more having lived there previously. I enjoy both listening and playing music, with my main instruments being the piano and the trumpet. I also sing in a choir.</p>
-  </section>
-  </div>
-   <section id="music">
-      <header>
-        <h2>Music I like</h2>
-      </header>
-      <p>I like most music from classical, through to rock, as well as ambient and folk. I'm not a fan of hip-hop, garage, or rap on the whole. My favourite artists include Dave Matthews Ban, Iron Maiden, and Andy McKee. I'm currently obsessed with &quot;Hide and Seek&quot; by Imogen Heap and &quot;Beth/Rest&quot; by Bon Iver.</p>
-    </section>  
+  <main>
+    <section>
+      <h2>About</h2>
+      <p>I'm a software developer in finance, mostly building infrastructure tooling and making systems talk to each other. I have an eye for detail, or at least an eye for spotting mistakes, and a stubborn belief that things should be done properly, if not first time then eventually. I like simple. I'm also wary of anything that claims to be, and will happily explain why.</p>
+    </section>
+
+    <section>
+      <h2>Things I have made</h2>
+      <ul class="cards">
+        <li>
+          <a href="https://eddporter.github.io/tsuikyuu/explainers/one-loop-many-searches.html">
+            <span class="name">One loop, many searches</span>
+            <span class="desc">An interactive explainer showing that breadth-first, depth-first, Dijkstra and A* are one search loop with a single function swapped.</span>
+            <span class="kind">Explainer</span>
+          </a>
+        </li>
+        <li>
+          <a href="https://eddporter.github.io/slider/">
+            <span class="name">Slider</span>
+            <span class="desc">A sliding puzzle solver, with A* and IDA* explained.</span>
+            <span class="kind">Explainer and tool</span>
+          </a>
+        </li>
+        <li>
+          <a href="https://eddporter.github.io/bezique/">
+            <span class="name">Bezique</span>
+            <span class="desc">A card game.</span>
+            <span class="kind">Game</span>
+          </a>
+        </li>
+        <li>
+          <a href="https://eddporter.github.io/GeneCodeCS/">
+            <span class="name">GeneCodeCS</span>
+            <span class="desc">Genetic programming library for .NET. Evolve programs from your own C# methods, compiled in memory.</span>
+            <span class="kind">Library</span>
+          </a>
+        </li>
+        <li>
+          <a href="https://github.com/EddPorter/tsuikyuu">
+            <span class="name">tsuikyuu</span>
+            <span class="desc">Source for the algorithm explainers. More will be added.</span>
+            <span class="kind">Source code</span>
+          </a>
+        </li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Beyond the day job</h2>
+      <p>I like architecture, algorithms and data structures, and the whole journey from design to delivery. I like tests too, the targeted kind that give confidence a codebase does what it claims, catch regressions and make refactoring less alarming. I agree with Dijkstra that testing can show the presence of bugs but never their absence, which is why formal methods fascinate me, even though I have yet to use them in anger. The explainers above are what happens when that interest gets out.</p>
+      <p>Learning is the hobby the other hobbies hang off. Japan is the big one. I lived there, I still speak some Japanese, and I love the language, the culture, the food and the tea ceremony. Languages in general are a weakness. I play the piano and sing in a choir, and I'm teaching myself the organ and the trombone, neither of which is a quiet instrument to learn badly. I cycle to work, and keep promising myself I'll start running again.</p>
+    </section>
+  </main>
+</div>
+</body>
+</html>
