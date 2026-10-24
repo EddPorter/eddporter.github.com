@@ -49,4 +49,3 @@ nav { display: flex; gap: 20px; font-weight: 500; }
 .cards .desc:empty { display: none; }
 .cards .kind { font-size: 12px; text-transform: uppercase; letter-spacing: 0.08em; color: var(--muted); font-weight: 500; margin-top: auto; }
 
-.pair { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 32px; }
