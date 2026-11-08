@@ -1,6 +1,6 @@
-# eddporter.github.io
+# eddporter.com
 
-Source for my personal homepage, published at <https://eddporter.github.io/> with GitHub Pages.
+Source for my personal homepage, published at <https://eddporter.com/> with GitHub Pages. The old address, `eddporter.github.io`, redirects there.
 
 ## How it works
 
@@ -9,13 +9,14 @@ The site is plain HTML and CSS with no build step. An empty `.nojekyll` file sto
 | Path | What it is |
 | --- | --- |
 | `index.html` | The homepage |
+| `CNAME` | Tells GitHub Pages the custom domain, `eddporter.com` |
 | `css/main.css` | Its styles |
 | `projects.html`, `tools.html`, `enterprise.txt` | Old notes from 2012, still published but not linked from the homepage |
 | `images/bgimg.jpg` | The old background image, no longer used |
 
-The project sites linked from the homepage (Slider, Bezique, GeneCodeCS and tsuikyuu) live in their own repositories and are served by GitHub Pages under `eddporter.github.io/<repository>/`.
+The project sites linked from the homepage (Slider, Bezique, GeneCodeCS and tsuikyuu) live in their own repositories and are served by GitHub Pages under `eddporter.com/<repository>/`.
 
-The repository is still named `eddporter.github.com`, but the site is served from `eddporter.github.io`.
+The repository is still named `eddporter.github.com`, but the site is served at `eddporter.com`.
 
 ## Previewing locally
 
